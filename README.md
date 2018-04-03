@@ -31,6 +31,6 @@ programmers or not. This is classified as Behavior Driven Development, or BDD.
 # Test Execution
 Text execution was done by through running a test script, debugging, and refactoring it. One 'it' block was tested at a time. Only one browser (chrome) was used for testing at the start. Once all test scripts were complete and working on Chrome, did I then move on to adding Firefox and IE through multiremote. Internet Explorer proved an unsuccessful venture as IE is not fully compatible with automation software at this time. Firefox proved successful, but not for the Frontier site. The Frontier site does not load through automation on Firefox. A "Your connection is not secure" message appears, blocking the site from loading. Although multiple methods were implemented to circumvent this (making Frontier website an exception, editing Firefox config, and creating a Firefox profile), not of the methods proved successful for the Frontier website. Other sites, such as https://www.google.com/ can be automated with Firefox as the browser.
 
-#Bugs
+# Bugs
 Lastly, a couple bugs were found on the Frontier website. On the /services page, the Change Address modal lacks input validation or feasible boundry constraints. For example, the City field on the modal allows only digits to be input. The zip code field allows far more than 9 digits. This also means the zip code that is updated on the webpage itself will show all the digits entered
 in the zip code field, no matter how long.  
